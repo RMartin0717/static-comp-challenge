@@ -357,7 +357,7 @@ template {
 
 
 * {
-  /* border: solid 1px green; */
+  border: solid 1px green;
 }
 
 body {
@@ -411,7 +411,7 @@ p {
 
 }
 
-.cards {
+.card-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -482,11 +482,39 @@ p {
   color: #5CB5FE;
 }
 
-/*
+
 @media only screen and (min-width: 700px) {
 
-.cards {
-  display: grid;
-}
+  article {
+    /* height: 25vh; */
+  }
 
-} */
+
+  section {
+
+  }
+
+  .card {
+    width: 20vw;
+    /* height: 30vh; */
+  }
+
+
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .card-header-background {
+    height: 10vh;
+  }
+
+  .card-body {
+    /* height: 15vh; */
+  }
+
+
+}
