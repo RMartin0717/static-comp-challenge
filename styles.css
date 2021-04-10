@@ -357,11 +357,13 @@ template {
 
 
 * {
-  border: solid 1px green;
+  /* border: solid 1px green; */
 }
 
 body {
-
+  background-color: #EFEFEF;
+  color: #676767;
+  font-family: arial, sans-serif;
 }
 
 header {
@@ -369,22 +371,33 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2vw;
+}
 
+article {
+  margin: 2vw;
+  box-shadow: 30px 30px, 30px #2B2B2B;
+  background-color: #FFFFFF;
 }
 
 section {
 
 }
 
-article {
-
-}
-
 button {
   height: 10vh;
+  background-color: transparent;
+  color: #8E8E8E;
 }
 
 h1 {
+  color: #4D4D4D;
+}
+
+h2 {
 
 }
 
@@ -392,10 +405,27 @@ h3 {
 
 }
 
+
+
 p {
 
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards:nth-child(1) header {
+  background:url("https://images.pexels.com/photos/5009409/pexels-photo-5009409.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  /* background-color: blue; */
+}
+
+.cards:nth-child(2) header {
+  background:url("https://images.pexels.com/photos/4665897/pexels-photo-4665897.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  /* background-color: blue; */
+}
 
 .header-background {
   display: flex;
@@ -409,26 +439,54 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  margin-left: 2vw;
   width: 50vw;
   height: 20vh;
 }
 
 .logo-box {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+
 }
 
 .card-header-background {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-  background:url("");
+  background-color: #2B2B2B;
+
 }
 
+.card-body {
+  padding: 2vw;
+}
 
+.views {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  color: #FEFFFF;
+}
+
+.link-box {
+  padding: 1vw;
+  margin: 2vw;
+  background-color: #EFEFEF;
+}
+
+.attachment-num {
+  color: #5CB5FE;
+}
+
+/*
 @media only screen and (min-width: 700px) {
 
 .cards {
   display: grid;
 }
 
-}
+} */
