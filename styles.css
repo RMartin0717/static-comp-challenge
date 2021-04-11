@@ -397,11 +397,11 @@ button {
   height: 5vh;
   border: none;
   background-color: transparent;
-  color: #8E8E8E;
+  color: #EFEFEF;
 }
 
 h1 {
-  color: #4D4D4D;
+  color: #EFEFEF;
 }
 
 h2 {
@@ -440,11 +440,10 @@ p {
   background-color: #2B2B2B;
 }
 
-.header-buttons {
+.header-menu {
   display: flex;
-  justify-content: space-around;
   align-items: flex-end;
-  margin-left: 2vw;
+  margin-left: 10vw;
   width: 50vw;
   height: 20vh;
 }
@@ -453,6 +452,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+  margin-right: 3vw;
 
 }
 
@@ -508,6 +509,11 @@ p {
   font-size: 2rem;
   color: #5CB5FE;
 }
+
+.header-buttons {
+  display: none;
+}
+
 
 #card1 {
   background:url("https://images.pexels.com/photos/136740/pexels-photo-136740.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
@@ -614,6 +620,19 @@ p {
 
   p {
     margin-top: .5vw;
+  }
+
+  .header-menu {
+      display: none!important;
+  }
+
+  .header-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 2vw;
+    width: 50vw;
+    height: 20vh;
   }
 
   .card {
