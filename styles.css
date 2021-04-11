@@ -357,7 +357,10 @@ template {
 
 
 * {
-  border: solid 1px green;
+  /* border: solid 1px green; */
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
 }
 
 body {
@@ -379,7 +382,7 @@ main {
 
 article {
   margin: 2vw;
-  box-shadow: 30px 30px, 30px #2B2B2B;
+  box-shadow: 0px 5px 10px #2B2B2B;
   background-color: #FFFFFF;
 }
 
@@ -388,26 +391,34 @@ section {
 }
 
 button {
-  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+  height: 5vh;
+  border: none;
   background-color: transparent;
-  color: #8E8E8E;
+  color: #EFEFEF;
 }
 
 h1 {
-  color: #4D4D4D;
+  color: #EFEFEF;
 }
 
 h2 {
+  margin-top: 2vw;
+  /* margin-bottom: .25vw; */
 
 }
 
 h3 {
+  margin-top: 3vw;
 
 }
 
 
 
 p {
+  margin-top: 1vw;
 
 }
 
@@ -417,14 +428,8 @@ p {
   justify-content: center;
 }
 
-.cards:nth-child(1) header {
-  background:url("https://images.pexels.com/photos/5009409/pexels-photo-5009409.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  /* background-color: blue; */
-}
-
-.cards:nth-child(2) header {
-  background:url("https://images.pexels.com/photos/4665897/pexels-photo-4665897.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  /* background-color: blue; */
+.card {
+  box-shadow: 30px 30px, 30px #2B2B2B;
 }
 
 .header-background {
@@ -435,11 +440,10 @@ p {
   background-color: #2B2B2B;
 }
 
-.header-buttons {
+.header-menu {
   display: flex;
-  justify-content: space-around;
   align-items: flex-end;
-  margin-left: 2vw;
+  margin-left: 10vw;
   width: 50vw;
   height: 20vh;
 }
@@ -448,44 +452,235 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+  margin-right: 3vw;
 
 }
 
 .card-header-background {
   display: flex;
   justify-content: space-between;
+
   width: 100%;
   height: 100%;
   background-color: #2B2B2B;
 
 }
 
-.card-body {
-  padding: 2vw;
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  margin-top: .9vw;
+  margin-left: .9vw;
+  width: 50px;
+  height: 50px;
+  background-color: #2B2B2B;
+  border-radius: 50%;
 }
 
 .views {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
+  margin-right: 1vw;
   color: #FEFFFF;
+}
+
+.view-count {
+  font-size: 2rem;
+}
+
+.card-body {
+  padding: 4vw;
+}
+
+.date {
+  margin-top: 1vw;
+  font-size: .75rem;
 }
 
 .link-box {
   padding: 1vw;
-  margin: 2vw;
+  margin-top: 3vw;
   background-color: #EFEFEF;
 }
 
 .attachment-num {
+  font-size: 2rem;
   color: #5CB5FE;
 }
 
+.header-buttons {
+  display: none;
+}
 
-@media only screen and (min-width: 700px) {
+
+#card1 {
+  background:url("https://images.pexels.com/photos/136740/pexels-photo-136740.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card2 {
+  background:url("https://images.pexels.com/photos/2299682/pexels-photo-2299682.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card3 {
+  background:url("https://images.pexels.com/photos/1048033/pexels-photo-1048033.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card4 {
+  background:url("https://images.pexels.com/photos/159062/rosenblatt-green-background-plant-159062.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card5 {
+  background:url("https://images.pexels.com/photos/2178028/pexels-photo-2178028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card6 {
+  background:url("https://images.pexels.com/photos/2233992/pexels-photo-2233992.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card7 {
+  background:url("https://images.pexels.com/photos/2453551/pexels-photo-2453551.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card8 {
+  background:url("https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+
+@media only screen and (min-width: 450px) {
 
   article {
+    margin: 0;
+    /* height: 25vh; */
+  }
+
+  p {
+    margin-top: .5vw;
+  }
+
+  section {
+
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 60vw;
+  }
+
+
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+    justify-content: start;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card-header-background {
+    height: 12vw;
+  }
+
+  .views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .card-body {
+    padding: 2vw;
+  }
+
+  .link-box {
+    margin-top: 2vw;
+  }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  article {
+    margin: 0;
+  }
+
+
+  h2 {
+    margin-top: 1vw;
+  }
+
+  h3 {
+    margin-top: 1vw;
+  }
+
+  p {
+    margin-top: .5vw;
+  }
+
+  .header-menu {
+      display: none!important;
+  }
+
+  .header-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 2vw;
+    width: 50vw;
+    height: 20vh;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 48vw;
+  }
+
+
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+    justify-content: start;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card-header-background {
+    height: 10vw;
+  }
+
+  .views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .card-body {
+    padding: 2vw;
+  }
+
+  .link-box {
+    /* padding: 1vw; */
+    margin-top: .75vw;
+    /* background-color: #EFEFEF; */
+  }
+
+
+}
+
+@media only screen and (min-width: 920px) {
+
+  article {
+    margin: 0;
     /* height: 25vh; */
   }
 
@@ -495,23 +690,34 @@ p {
   }
 
   .card {
-    width: 20vw;
-    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    height: 35vw;
   }
 
 
   .card-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100vw;
-    height: 100vh;
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+    justify-content: start;
+
+    width: 100%;
+    height: 100%;
   }
 
   .card-header-background {
-    height: 10vh;
+    height: 8vw;
   }
 
+  .views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
   .card-body {
     /* height: 15vh; */
   }
