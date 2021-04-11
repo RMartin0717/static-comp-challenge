@@ -348,16 +348,11 @@ template {
   display: none;
 }
 
-
-
-
-
-
-
-
+/* Page Styling
+    ==========================================================================
+ */
 
 * {
-  /* border: solid 1px green; */
   padding: 0;
   margin: 0;
   font-size: 1rem;
@@ -367,10 +362,6 @@ body {
   background-color: #EFEFEF;
   color: #676767;
   font-family: arial, sans-serif;
-}
-
-header {
-
 }
 
 main {
@@ -384,10 +375,6 @@ article {
   margin: 2vw;
   box-shadow: 0px 5px 10px #2B2B2B;
   background-color: #FFFFFF;
-}
-
-section {
-
 }
 
 button {
@@ -406,20 +393,14 @@ h1 {
 
 h2 {
   margin-top: 2vw;
-  /* margin-bottom: .25vw; */
-
 }
 
 h3 {
   margin-top: 3vw;
-
 }
-
-
 
 p {
   margin-top: 1vw;
-
 }
 
 .card-section {
@@ -454,17 +435,14 @@ p {
   justify-content: flex-end;
   align-items: center;
   margin-right: 3vw;
-
 }
 
 .card-header-background {
   display: flex;
   justify-content: space-between;
-
   width: 100%;
   height: 100%;
   background-color: #2B2B2B;
-
 }
 
 .arrow-button {
@@ -552,15 +530,10 @@ p {
 
   article {
     margin: 0;
-    /* height: 25vh; */
   }
 
   p {
     margin-top: .5vw;
-  }
-
-  section {
-
   }
 
   .card {
@@ -570,14 +543,12 @@ p {
     height: 60vw;
   }
 
-
   .card-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1vw;
     justify-content: start;
-
     width: 100%;
     height: 100vh;
   }
@@ -599,16 +570,9 @@ p {
   .link-box {
     margin-top: 2vw;
   }
-
-
 }
 
 @media only screen and (min-width: 600px) {
-
-  article {
-    margin: 0;
-  }
-
 
   h2 {
     margin-top: 1vw;
@@ -616,10 +580,6 @@ p {
 
   h3 {
     margin-top: 1vw;
-  }
-
-  p {
-    margin-top: .5vw;
   }
 
   .header-menu {
@@ -636,91 +596,35 @@ p {
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
     width: 30vw;
     height: 48vw;
   }
 
-
   .card-section {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1vw;
-    justify-content: start;
-
-    width: 100%;
-    height: 100vh;
   }
 
   .card-header-background {
     height: 10vw;
   }
 
-  .views {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .card-body {
-    padding: 2vw;
-  }
-
   .link-box {
-    /* padding: 1vw; */
     margin-top: .75vw;
-    /* background-color: #EFEFEF; */
   }
-
-
 }
 
 @media only screen and (min-width: 920px) {
 
-  article {
-    margin: 0;
-    /* height: 25vh; */
-  }
-
-
-  section {
-
-  }
-
   .card {
-    display: flex;
-    flex-direction: column;
     width: 23vw;
     height: 35vw;
   }
 
-
   .card-section {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1vw;
-    justify-content: start;
-
-    width: 100%;
-    height: 100%;
   }
 
   .card-header-background {
     height: 8vw;
   }
-
-  .views {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .card-body {
-    /* height: 15vh; */
-  }
-
-
 }
