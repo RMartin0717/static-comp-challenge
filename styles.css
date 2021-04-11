@@ -424,16 +424,6 @@ p {
   box-shadow: 30px 30px, 30px #2B2B2B;
 }
 
-.cards:nth-child(1) header {
-  background:url("https://images.pexels.com/photos/5009409/pexels-photo-5009409.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  /* background-color: blue; */
-}
-
-.cards:nth-child(2) header {
-  background:url("https://images.pexels.com/photos/4665897/pexels-photo-4665897.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  /* background-color: blue; */
-}
-
 .header-background {
   display: flex;
   justify-content: space-between;
@@ -487,6 +477,38 @@ p {
 
 .attachment-num {
   color: #5CB5FE;
+}
+
+#card1 {
+  background:url("https://images.pexels.com/photos/136740/pexels-photo-136740.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card2 {
+  background:url("https://images.pexels.com/photos/2299682/pexels-photo-2299682.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card3 {
+  background:url("https://images.pexels.com/photos/1048033/pexels-photo-1048033.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card4 {
+  background:url("https://images.pexels.com/photos/159062/rosenblatt-green-background-plant-159062.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card5 {
+  background:url("https://images.pexels.com/photos/2178028/pexels-photo-2178028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card6 {
+  background:url("https://images.pexels.com/photos/2233992/pexels-photo-2233992.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card7 {
+  background:url("https://images.pexels.com/photos/2453551/pexels-photo-2453551.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#card8 {
+  background:url("https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 
 
